@@ -11,7 +11,7 @@ import KakaoMap from "../components/KakaoMap";
 
 const SEOUL_CENTER: LatLngTuple = [37.5665, 126.978];
 const API_KEY = import.meta.env.VITE_AIR_QUALITY_API_KEY;
-const ENDPOINT = 'http://openAPI.seoul.go.kr:8088';
+const ENDPOINT = 'https://openAPI.seoul.go.kr:8088';
 const KAKAO_REST_API_KEY = import.meta.env.VITE_KAKAO_REST_API_KEY;
 
 async function fetchAirData() {
