@@ -30,7 +30,7 @@ const FineDustPage_Daily = () => {
 
     const fetchData = async (date: string) => {
         try {
-            const url = `https://openAPI.seoul.go.kr:8088/${API_KEY}/json/DailyAverageAirQuality/1/100/${date}`;
+            const url = `http://openAPI.seoul.go.kr:8088/${API_KEY}/json/DailyAverageAirQuality/1/100/${date}`;
             const res = await axios.get(url);
             const items = res.data?.DailyAverageAirQuality?.row || [];
             setData(items);
