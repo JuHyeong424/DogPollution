@@ -33,7 +33,7 @@ const FineDustPage_monthly = () => {
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
-                `https://openAPI.seoul.go.kr:8088/${API_KEY}/json/MonthlyAverageAirQuality/1/100/${year}${month}`
+                `http://openAPI.seoul.go.kr:8088/${API_KEY}/json/MonthlyAverageAirQuality/1/100/${year}${month}`
             );
             const json = await res.json();
             if (json.MonthlyAverageAirQuality?.row) {
